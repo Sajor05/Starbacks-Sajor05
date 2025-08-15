@@ -14,13 +14,28 @@ header a {
 
 .titulo {
   color: white;
-  background-color: #1E3932;
+  background-color: #1e3932;
 }
 
 main .boton-llegar {
-  background-color: #1E3932;
+  background-color: #1e3932;
   border: 0px;
   border: solid 2px black;
+}
+
+.footer-icon, footer .footer-bottom ul li a {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
 }
 
 footer {
@@ -39,21 +54,6 @@ footer .footer-bottom ul {
 }
 footer .footer-bottom ul li {
   list-style: none;
-}
-footer .footer-bottom ul li a {
-  width: 80px;
-  height: 80px;
-  background-color: #fff;
-  text-align: center;
-  line-height: 80px;
-  font-size: 35px;
-  margin: 0 10px;
-  display: block;
-  border-radius: 50%;
-  position: relative;
-  overflow: hidden;
-  border: 3px solid #fff;
-  z-index: 1;
 }
 footer .footer-bottom ul li a .icon {
   position: relative;
