@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+}
+
+header .navbar.navbar-expand-lg.bg-body-tertiary.p-1 {
+  gap: 20px;
+}
+header .container-fluid {
+  padding: 0 200px;
+}
+header a {
+  text-decoration: none;
+}
+
+.titulo {
+  background-color: #1e3932;
+}
+.titulo h1 {
+  color: white;
+}
+
+.sierra {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  border-top: 1px solid #eee;
+}
+footer .row {
+  border-bottom: 1px solid #eee;
+}
+footer .row .links a {
+  text-align: justify;
+  text-decoration: none;
+  color: gray;
+}
+footer .footer-bottom ul {
+  display: flex;
+}
+footer .footer-bottom ul li {
+  list-style: none;
+}
+footer .footer-bottom ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+footer .footer-bottom ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+footer .footer-bottom ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+footer .footer-bottom ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+footer .footer-bottom ul li a:hover:before {
+  top: 0;
+}
+footer .footer-bottom ul li:nth-child(1) a:before {
+  background: #3b5999;
+}
+footer .footer-bottom ul li:nth-child(2) a:before {
+  background: #55acee;
+}
+footer .footer-bottom ul li:nth-child(3) a:before {
+  background: #0077b5;
+}
+footer .footer-bottom ul li:nth-child(4) a:before {
+  background: #dd4b39;
+}
+
+/*# sourceMappingURL=cafe.css.map */
