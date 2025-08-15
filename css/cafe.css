@@ -8,6 +8,16 @@ header .navbar.navbar-expand-lg.bg-body-tertiary.p-1 {
 header .container-fluid {
   padding: 0 200px;
 }
+@media (max-width: 992px) {
+  header .container-fluid {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 576px) {
+  header .container-fluid {
+    padding: 0 15px;
+  }
+}
 header a {
   text-decoration: none;
 }
