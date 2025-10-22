@@ -21,13 +21,13 @@
   </head>
   <body>
     <!------------------------------------
-        -- I N I C I O  D E L  N A V B A R --
-        ------------------------------------->
+    -- I N I C I O  D E L  N A V B A R --
+    ------------------------------------->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary p-1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="/img/logo.svg" alt="logo" />
+          <a class="navbar-brand" href="../Home/index.html">
+            <img src="../img/logo.svg" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -43,37 +43,47 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item fw-bold">
-                <a class="nav-link active" aria-current="page" href="menu.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../pages/Menu/menu.html"
                   >MENÚ</a
                 >
               </li>
               <li class="nav-item fw-bold">
-                <a class="nav-link active" href="cafe.html">CAFÉ</a>
+                <a class="nav-link active" href="../pages/Cafe/cafe.html"
+                  >CAFÉ</a
+                >
               </li>
               <li class="nav-item fw-bold">
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="experiencia.html"
+                  href="../pages/Experiencia/experiencia.html"
                   >EXPERIENCIA STARBOOKS</a
                 >
               </li>
             </ul>
-            <a
-              class="nav-link active fw-bold"
-              aria-current="page"
-              href="localizar.html"
-            >
-              <i class="fa-solid fa-location-dot"></i> LOCALIZAR LOCAL
-            </a>
+            <div class="login-container">
+              <a href="../pages/Users/login.html"> INICIAR SESION </a>
+            </div>
+
+            <div class="localizar-container px-2">
+              <a
+                class="nav-link active fw-bold"
+                aria-current="page"
+                href="/pages/localizar.html"
+              >
+                <i class="fa-solid fa-location-dot"></i> LOCALIZAR LOCAL
+              </a>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-
-    <!----------------------------------
-        -- F I N A L  D E L  N A V B A R --
-        ----------------------------------->
+    <!-----------------------------------
+    -- /F I N A L  D E L  N A V B A R --
+    ------------------------------------>
 
     <section class="mb-5">
       <div class="titulo text-center p-5">
