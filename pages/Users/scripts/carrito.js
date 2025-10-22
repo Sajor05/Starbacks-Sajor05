@@ -1,0 +1,3 @@
+class Carrito {
+  constructor(parameters) {}
+}
