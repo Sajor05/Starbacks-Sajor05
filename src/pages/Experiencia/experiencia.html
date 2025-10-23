@@ -14,9 +14,16 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./localizar.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./experiencia.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/b408879b64.js"></script>
-    <title>Locales | Starboocks</title>
+    <title>Expriencia | Starboocks</title>
   </head>
   <body>
     <!------------------------------------
@@ -25,8 +32,8 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary p-1">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../Home/index.html">
-            <img src="../img/logo.svg" alt="logo" />
+          <a class="navbar-brand" href="../../Home/index.html">
+            <img src="../../assets/logo.svg" alt="logo" />
           </a>
           <button
             class="navbar-toggler"
@@ -45,20 +52,18 @@
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../pages/Menu/menu.html"
+                  href="../Menu/menu.html"
                   >MENÚ</a
                 >
               </li>
               <li class="nav-item fw-bold">
-                <a class="nav-link active" href="../pages/Cafe/cafe.html"
-                  >CAFÉ</a
-                >
+                <a class="nav-link active" href="../Cafe/cafe.html">CAFÉ</a>
               </li>
               <li class="nav-item fw-bold">
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="../pages/Experiencia/experiencia.html"
+                  href="../Experiencia/experiencia.html"
                   >EXPERIENCIA STARBOOKS</a
                 >
               </li>
@@ -84,60 +89,113 @@
     <!-----------------------------------
     -- /F I N A L  D E L  N A V B A R --
     ------------------------------------>
+
+    <!-----------------------------------------------------------------
+        -- I N I C I O  D E  E X P E R I E N C I A  S T A R B O O C K S --
+        ------------------------------------------------------------------>
+
     <div class="titulo text-center p-5">
-      <h1>L O C A L E S</h1>
+      <h1 class="fw-bold">EXPERIENCIA STARBOOKS</h1>
+    </div>
+    <div class="slogan text-center p-4 mb-3 mt-4">
+      <h3>
+        Para cada momento hay una forma de vivir la <br />
+        Experiencia Starbucks como vos quieras
+      </h3>
     </div>
 
-    <main class="d-flex justify-content-center gap-5 flex-wrap mt-4 p-5">
-      <!-- Columna izquierda -->
+    <main class="container mb-5">
+      <div class="container-fluid">
+        <!-----------------------------------
+                -- I N I C I O  D E  T I E N D A --
+                ----------------------------------->
+        <section class="contenedor-1 mt-3 text-center" data-aos="fade-down">
+          <div class="row">
+            <div class="col p-5 mt-5">
+              <h1>Tienda</h1>
+              <p class="fw-bold mt-3">
+                Vení a vivir la experiencia completa en nuestra cafetería: el
+                aroma del café recién molido, la atención personalizada y la
+                posibilidad de elegir tus granos favoritos en persona. Un lugar
+                para disfrutar con calma.
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="/img/experiencia/in_store.png"
+                alt="experiencia en la tienda"
+                class="img-fluid w-100"
+              />
+            </div>
+          </div>
+        </section>
+        <!----------------------------------
+                -- /F I N A L  D E  T I E N D A --
+                ---------------------------------->
 
-      <div class="col-md-5">
-        <p class="fw-bold mt-3">Seleccionar Sucursal</p>
-        <select name="select" class="input-select form-control mb-4">
-          <option value="1">Sucursal MORON NORTE</option>
-          <option value="2">Sucursal ITUZAINGO CENTRO</option>
-          <option value="3">Sucursal MORENO</option>
-          <option value="4">Sucursal GRAL. RODRIGUEZ</option>
-          <option value="5">Sucursal CASTELAR SUR</option>
-          <option value="6">Sucursal CASTELAR NORTE</option>
-          <option value="7">Sucursal ITUZAINGO NORTE</option>
-          <option value="8">Sucursal HURLINGHAM CENTRO</option>
-          <option value="9">Sucursal CIUDADELA</option>
-          <option value="10">Sucursal CASEROS</option>
-          <option value="11">Sucursal HURLINGHAM NORTE</option>
-        </select>
+        <!---------------------------------------------------
+                -- I N I C I O  D E  A U T O S T A R B O O C K S --
+                --------------------------------------------------->
+        <section class="contenedor-2 mt-3 text-center" data-aos="fade-right">
+          <div class="row">
+            <div
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="/img/experiencia/drive_thru.png"
+                alt="Pasa a buscar tu cafe"
+                class="img-fluid w-100"
+              />
+            </div>
+            <div class="col p-5 mt-5">
+              <h1>Auto Starboocks</h1>
+              <p class="fw-bold mt-3">
+                Si estás apurado, pasá por nuestro auto-servicio. Sin bajarte
+                del vehículo, podés pedir tu café y llevártelo caliente y listo
+                en minutos. Rápido, cómodo y con la misma calidad de siempre.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--------------------------------------------------
+                -- /F I N A L  D E  A U T O S T A R B O O C K S --
+                -------------------------------------------------->
 
-        <div class="mb-3">
-          <i class="fa-solid fa-location-dot"></i>
-          <p class="d-inline ms-2">Crisólogo Larralde 1023, Morón</p>
-          <br />
-          <i class="fa-solid fa-alarm-clock"></i>
-          <p class="d-inline ms-2">
-            Lunes a domingos y feriados de 8:00 a 22:00 Hs.
-          </p>
-          <br />
-          <a
-            href="https://maps.app.goo.gl/m1RPtnVvPfkuBbVKA"
-            class="boton-llegar mt-3 fw-bold btn btn-primary"
-            >Cómo llegar</a
-          >
-        </div>
-      </div>
-
-      <!-- Columna derecha: Mapa -->
-      <div class="col-md-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23964.03359486888!2d-58.64207645310959!3d-34.62913207722328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb8bbf3bb6c09%3A0x68ec53b8d1b7111f!2sStarbucks!5e1!3m2!1ses!2sar!4v1755218266166!5m2!1ses!2sar"
-          width="800"
-          height="500"
-          style="border: 0"
-          allowfullscreen="true"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
+        <!---------------------------------------
+                -- I N I C I O  D E  D E L I V E R Y --
+                --------------------------------------->
+        <section class="contenedor-3 mt-4 text-center" data-aos="fade-left">
+          <div class="row">
+            <div class="col p-5 mt-5">
+              <h1>Delivery</h1>
+              <p class="fw-bold mt-3">
+                Pedí desde donde estés y recibí tu café fresco en la puerta de
+                tu casa u oficina. Ideal para esos días en los que querés la
+                calidad de nuestra tienda sin moverte.
+              </p>
+            </div>
+            <div
+              class="col-12 col-md-6 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="/img/experiencia/delivery.png"
+                alt="Delivery"
+                class="img-fluid w-100"
+              />
+            </div>
+          </div>
+        </section>
+        <!-------------------------------------
+                -- /F I N A L  D E  D E L I V E R Y --
+                -------------------------------------->
       </div>
     </main>
+
+    <!-----------------------------------------------------------------
+        -- / F I N A L  D E  E X P E R I E N C I A  S T A R B O O C K S --
+        ------------------------------------------------------------------>
 
     <!------------------------------------
         -- I N I C I O  D E L  F O O T E R --
@@ -229,6 +287,10 @@
         -- /F I N A L  D E L  F O O T E R --
         ------------------------------------>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
