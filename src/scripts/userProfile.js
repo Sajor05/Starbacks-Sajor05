@@ -3,18 +3,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const user = localStorage.getItem("Username");
 
   /*----------------------------
-  -- C E R R A R  S E S I O N --
-  -----------------------------*/
-  function logout() {
-    const logout = document.getElementsByClassName("logout");
-    logout.addEventListener("click", () => {
-      localStorage.removeItem("Username");
-      localStorage.removeItem("Password");
-      location.reload();
-    });
-  }
-
-  /*----------------------------
   -- M O S T R A R  P E R F I L --
   -----------------------------*/
   function profile() {
@@ -35,6 +23,18 @@ document.addEventListener("DOMContentLoaded", () => {
       `;
       logout();
     }
+  }
+
+  /*----------------------------
+  -- C E R R A R  S E S I O N --
+  -----------------------------*/
+  function logout() {
+    const logout = document.getElementsByClassName("logout");
+    logout.addEventListener("click", () => {
+      localStorage.removeItem("Username");
+      localStorage.removeItem("Password");
+      location.reload();
+    });
   }
 
   profile();
