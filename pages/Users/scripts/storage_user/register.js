@@ -1,11 +1,11 @@
 const formulario = document.getElementById("register");
 
-function data(username, adress, pass, pass2) {
-  return username && adress && pass && pass2;
+function data(username, adress, pass, verify_pass) {
+  return username && adress && pass && verify_pass;
 }
 
-function verifyPassword(pass, pass2) {
-  return pass === pass2;
+function verifyPassword(pass, verify_pass) {
+  return pass === verify_pass;
 }
 
 function getData(user, adress, password) {
@@ -20,10 +20,10 @@ function register() {
     const userName = document.getElementById("username").value;
     const adress = document.getElementById("adress").value;
     const password = document.getElementById("password").value;
-    const password2 = document.getElementById("password-2").value;
+    const verify_password = document.getElementById("password-2").value;
 
-    if (data(userName, adress, password, password2)) {
-      if (verifyPassword(password, password2)) {
+    if (data(userName, adress, password, verify_password)) {
+      if (verifyPassword(password, verify_password)) {
         getData(userName, adress, password);
         window.location.href = "../../../Home/index.html";
       } else {
