@@ -41,8 +41,10 @@ function verify(user, pass2) {
     return;
   }
   setData(user);
+  user.isLogged = true;
+  localStorage.setItem("UsuarioLogueado", JSON.stringify(user));
+
   window.location.href = "../../Home/index.html";
-  user.profile();
 }
 
 //Verifica si ya existe

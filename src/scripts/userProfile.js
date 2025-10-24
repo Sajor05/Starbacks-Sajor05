@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (logout) {
     logout.addEventListener("click", () => {
       localStorage.removeItem("UsuarioLogueado");
-      window.location.reload();
+      window.location.href = "/src/Home/index.html";
     });
   }
 });

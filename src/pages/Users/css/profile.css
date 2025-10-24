@@ -22,6 +22,42 @@ header a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.user-card {
+  margin-top: 50px;
+}
+
+.main-container {
+  width: 90rem;
+  height: 30rem;
+}
+
+.user-options {
+  text-align: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+.user-icon,
+.help-icon {
+  width: 40px;
+}
+
+.options-container {
+  padding-top: 5px;
+  padding-bottom: 1px;
+  width: 400px;
+  background-color: #dcdcdc;
+  border-radius: 10px;
+}
+.options-container:hover {
+  background-color: #d3d3d3;
+}
+
 .footer-icon,
 footer .footer-bottom ul li a {
   width: 80px;
