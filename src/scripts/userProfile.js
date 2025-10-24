@@ -1,41 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const profileOrLogin = document.querySelector(".login-container");
-  const user = localStorage.getItem("Username");
+  const state = document.querySelector(".login-container");
+  if (!state) return;
 
-  /*----------------------------
-  -- M O S T R A R  P E R F I L --
-  -----------------------------*/
-  function profile() {
-    if (!profileOrLogin) return;
+  const usuario = JSON.parse(localStorage.getItem("UsuarioLogueado"));
+  if (!usuario || !usuario.isLogged) return;
 
-    if (user) {
-      profileOrLogin.innerHTML = `
-        <li class="nav-item dropdown list-unstyled">
-            <a class="nav-link dropdown-toggle fw-bold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                ${user.toUpperCase()}
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
-                <li><button class="logout dropdown-item" onclick="localStorage.clear();" href="#">Cerrar sesion</button></li>
-            </ul>
-        </li>
-      `;
-      logout();
-    }
-  }
+  state.innerHTML = `
+    <ul class="navbar-nav mb-2 mb-lg-0 d-flex align-items-center">
+      <li class="nav-item dropdown">
+        <a class="nav-link active dropdown-toggle fw-bold" href="#" id="perfilDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          ${usuario.username.toUpperCase()}
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="perfilDropdown">
+          <li><a class="dropdown-item" href="../pages/Users/profile.html">Perfil</a></li>
+          <li><a class="dropdown-item" href="#">Mis pedidos</a></li>
+          <li><button class="dropdown-item text-danger" id="logout">Cerrar sesión</button></li>
+        </ul>
+      </li>
+      <li class="nav-item ms-2">
+        <a href="../pages/Cart/cart.html" class="nav-link active fw-bold">CARRITO</a>
+      </li>
+    </ul>
+  `;
 
-  /*----------------------------
-  -- C E R R A R  S E S I O N --
-  -----------------------------*/
-  function logout() {
-    const logout = document.getElementsByClassName("logout");
+  const logout = document.getElementById("logout");
+  if (logout) {
     logout.addEventListener("click", () => {
-      localStorage.removeItem("Username");
-      localStorage.removeItem("Password");
-      location.reload();
+      localStorage.removeItem("UsuarioLogueado");
+      window.location.reload();
     });
   }
-
-  profile();
 });

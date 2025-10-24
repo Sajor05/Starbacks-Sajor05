@@ -42,8 +42,10 @@ function verify(user, pass2) {
   }
   setData(user);
   window.location.href = "../../Home/index.html";
+  user.profile();
 }
 
+//Verifica si ya existe
 function existe(user) {
   return users.some((u) => u.username == user.username);
 }
